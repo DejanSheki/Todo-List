@@ -3,3 +3,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background: linear-gradient(120deg, #ffcb29, #fd815d);
+    color: rgb(245, 245, 245);
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 1.4rem;
+}
+
+header h1 {
+    text-shadow: 1px 1px 1px rgb(100, 100, 100);
+}
+
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,
+form button {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    border: none;
+    background: rgb(245, 245, 245);
+}
+
+form button {
+    color: #fd815d;
+    background: rgb(245, 245, 245);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: #fd815d;
+    color: rgb(245, 245, 245);
+}
