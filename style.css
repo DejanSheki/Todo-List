@@ -29,7 +29,7 @@ form {
 
 form input,
 form button {
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     font-size: 1.3rem;
     border: none;
     background: rgb(245, 245, 245);
@@ -105,4 +105,39 @@ form button:hover {
     transform: rotateX(90deg) translateX(16rem);
     opacity: 0;
     transition: 1.5s ease;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    color: rgb(255, 111, 71);
+    background: rgb(245, 245, 245);
+    width: 10rem;
+    cursor: pointer;
+    height: 3rem;
+    font-size: 1rem;
+    padding-left: 0.3rem;
+}
+
+.select::after {
+    content: "\25bc";
+    position: absolute;
+    background: rgb(255, 111, 71);
+    font-size: 2rem;
+    top: 0;
+    right: 0;
+    padding: 0 0.5rem;
+    pointer-events: none;
 }
