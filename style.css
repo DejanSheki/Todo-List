@@ -25,6 +25,7 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 form input,
@@ -140,4 +141,19 @@ select {
     right: 0;
     padding: 0 0.5rem;
     pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        min-height: 13vh;
+    }
+    .todo-input {
+        width: 70%;
+    }
+    select {
+        width: 20rem;
+    }
+    .todo-list {
+        min-width: 85%;
+    }
 }
